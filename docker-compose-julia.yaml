@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  julia:
+    container_name: julia
+    build: .
+    ports:
+      - 8888:8888
+    volumes:
+      - ./scripts:/home/jovyan/work
